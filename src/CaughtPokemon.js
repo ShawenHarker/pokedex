@@ -1,18 +1,9 @@
 import React from "react";
 
-let CaughtPokemon = () => {
-    let date = new Date().toLocaleDateString();
-    let abilities = ["Anticipation", "Adaptability", "Run-Away"];
-    return (
-      <div>
-        <p>"Caught 0 Pokemon on" {date}</p>
-        <ul>
-          {abilities.map((ability, index) => (
-            <li key = {index}>{ability}</li>
-          ))}
-        </ul>
-      </div>
-    );
+let CaughtPokemon = (props) => {
+  return (
+    <p>Caught 0 Pokemon on {props.date}</p>
+  );
 };
 
 export default CaughtPokemon;
