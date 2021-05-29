@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 let CaughtPokemon = (props) => {
   let [caught, setCaught] = useState([]);
-  console.log(caught);
   let listOfPokemons = ["Pikachu", "Charizard", "Landorus", "Eevee", "Snorlax", "MewTwo", "Charmander", "Ditto", "Squirtle", "Lucario", "Gardevior", "Gengar", "Bulbasaur"];
 
   const catchPokemon = () => {
