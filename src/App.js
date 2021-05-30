@@ -3,6 +3,7 @@ import Logo from "./logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <BestPokemon abilities={["Anticipation", "Adaptability", "Fly-Away"]} />
       <CaughtPokemon date={new Date().toLocaleDateString()} />
       <PokemonMovesSelector />
+      <PokemonCity />
     </div>
   );
 }
